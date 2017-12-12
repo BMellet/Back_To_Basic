@@ -18,14 +18,11 @@ gulp.task('sass', function() {
     .pipe(browserSync.stream());
 });
 
-gulp.task('uglify', function (cb) {
-  pump([
-        gulp.src('assets/js/app.js'),
-        uglify(),
+gulp.task('uglify', function () {
+        gulp.src('assets/js/app.js')
+          uglify()
         gulp.dest('public/js/')
-    ],
-    cb
-  ).pipe(browserSync.stream());
+        .pipe(browserSync.stream());
 });
 
 
@@ -33,7 +30,8 @@ gulp.task('serve', ['sass', 'uglify'], function() {
     browserSync.init({
         server: './public/',
         open: true,
-        notify: false
+        notify: false,
+        reload:true
     });
 		gulp.watch('assets/sass/**/*.scss',['sass']);
 		gulp.watch('assets/js/**/*.js', ['uglify']);
