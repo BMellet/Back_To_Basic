@@ -16,8 +16,9 @@
 
   .boxHIWork {
     display: flex;
-    flex-wrap: nowrap;
-    float: right;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
     width: 100%;
   }
 
@@ -28,14 +29,12 @@
   }
 
   .boxbillets {
-    display: inherit;
     border-left: 2px solid #ECECEC;
-    margin-right: 220px;
+    width: 40%;
   }
 
   .boxpaiement {
-    display: inherit;
-    margin-left: 283px;
+    width: 40%;
   }
 
   .imgIcon {
@@ -120,15 +119,15 @@
 
   button {
     background-color: #01aa91;
-    border-color: #01aa91 #01aa91 #017766;
     border: 1px solid #01C3A7;
+    border-bottom: 1px solid #01907c;
+    box-shadow: 0 1px 1px -1px #8C9DA1;
     text-transform: uppercase;
     margin-top: 20px;
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: .025em;
-    font-weight: 600;
+    font-weight: 500;
     color: white;
-    box-shadow: 0 1px 1px -1px #8C9DA1;
     border-radius: .3125em;
     padding: 12px 22px;
     text-align: center;
@@ -138,9 +137,9 @@
 
 .advise {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  justify-content: center;
   width: 100%;
   padding: 60px 0;
 
@@ -154,10 +153,44 @@
 
   p {
     width: 100%;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 23%;
+    margin-right: 23%;
     font-size: 19px;
     line-height: 1.5em;
     color: #8C8A8C;
   }
+
+  .tweets {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 30px auto 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .encartsTweet {
+      padding: 0 10px 5px;
+      width: 295px;
+      cursor: pointer;
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .linkTweet {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 6px 15px;
+    color: #2B7BB9;
+  }
 }
+
