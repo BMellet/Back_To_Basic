@@ -131,5 +131,44 @@
       }
     }
 
+
+  }
+
+  h1 {
+
+    font-size: 40px;
+    color: #FFF;
+    text-shadow: 0 1px 4px rgba(48,50,58,.6);
+    margin: 1em 0 0;
+    text-align: center;
+    line-height: 1.15;
+  }
+
+  h2 {
+
+    font-size: 21px;
+    font-weight: 400;
+    color: #FFF;
+    text-shadow: 0 0 1px rgba(48,50,58,.6),0 1px 1px rgba(48,50,58,.6);
+    margin: .3em 0;
+    text-align: center;
+
+  }
+
+  .box {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2em;
+
+
+    * {
+      margin-right: 2.35765%;
+       width: 48.82117%;
+      padding: 24px 40px;
+      background-color: #FFF;
+      border-radius: .3125em;
+    }
+
+
   }
 }
