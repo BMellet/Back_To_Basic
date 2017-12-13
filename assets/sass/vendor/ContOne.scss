@@ -7,18 +7,17 @@
   height: 50em;
   flex-direction: column;
 
-
   .navbar {
 
-    width:auto;
+    width: auto;
     background-color: rgba(33, 49, 77, .8);
     display: flex;
     flex-direction: row;
     height: 4em;
     justify-content: space-between;
     align-items: center;
-    padding-left :10em;
-    padding-right:10em;
+    padding-left: 10em;
+    padding-right: 10em;
 
     * {
 
@@ -35,17 +34,17 @@
       svg {
 
         height: 100%;
-        fill : white;
+        fill: white;
 
       }
     }
     .account {
-     * {
+      * {
 
-       margin-right:10px;
-       cursor: pointer;
-       color: #FFF;
-     }
+        margin-right: 10px;
+        cursor: pointer;
+        color: #FFF;
+      }
 
       .createacc {
 
@@ -117,20 +116,17 @@
 
       .eur {
 
-        margin-top: 15px;
+        margin-top: 16px;
         margin-bottom: -7px;
         border: 2px solid #C0C9CC;
         border-radius: 5px;
         color: #FFF;
         font-size: 11px;
         font-weight: 800;
-        padding:3.5px;
+        padding: 3.5px;
         text-transform: none;
-
-        ;
       }
     }
-
 
   }
 
@@ -138,7 +134,7 @@
 
     font-size: 40px;
     color: #FFF;
-    text-shadow: 0 1px 4px rgba(48,50,58,.6);
+    text-shadow: 0 1px 4px rgba(48, 50, 58, .6);
     margin: 1em 0 0;
     text-align: center;
     line-height: 1.15;
@@ -149,26 +145,207 @@
     font-size: 21px;
     font-weight: 400;
     color: #FFF;
-    text-shadow: 0 0 1px rgba(48,50,58,.6),0 1px 1px rgba(48,50,58,.6);
+    text-shadow: 0 0 1px rgba(48, 50, 58, .6), 0 1px 1px rgba(48, 50, 58, .6);
     margin: .3em 0;
     text-align: center;
 
   }
 
   .box {
+    margin-left: 12%;
+    margin-right: 12%;
     display: flex;
-    flex-direction: row;
     margin-top: 2em;
 
-
-    * {
+    .trajet {
       margin-right: 2.35765%;
-       width: 48.82117%;
+      width: 48%;
+      padding: 24px 40px;
+      background-color: #FFF;
+      border-radius: .3125em;
+
+      .searchtitle {
+        font-size: 20px;
+        font-weight: 400;
+        color: #323E42;
+        line-height: 1.15;
+        margin-bottom: 30px;
+
+      }
+
+      .search {
+
+        width: 100%;
+        margin-bottom: 30px;
+
+        .leaving {
+
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0;
+
+        }
+        .coming {
+
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
+        }
+
+        input {
+          border: 1px solid #DCE3E6;
+          width: 100%;
+          color: #323E42;
+          box-sizing: border-box;
+          margin: 0;
+          text-align: left;
+          padding: 11px 0 11px 35px;
+          border-radius: .3125em;
+          line-height: 20px;
+          background-repeat: no-repeat;
+          background-position: 11px center;
+          font-size: 100%;
+          opacity: 0.60;
+
+        }
+
+        input:focus {
+          border-bottom: 1px solid;
+          border-color: #01C3A7;
+          background-color: #FFF;
+          box-shadow: none;
+          opacity: 1;
+        }
+      }
+
+      .search.station {
+
+        .leaving {
+
+          background-image: url(https://assets.trainline.eu/assets/images/from-793fd74a5d09b687beb849fab15ae7a6.svg);
+
+        }
+
+        .coming {
+
+          background-image: url(https://assets.trainline.eu/assets/images/to-3c0a8d746fa1464b9bd1f7be13b6b127.svg);
+        }
+      }
+
+      .search.dates {
+
+        .leaving {
+
+          background-image: url(https://assets.trainline.eu/assets/images/calendar-outward-021f4ddf731281274d7726a793a08a79.svg);
+        }
+
+        .coming {
+
+          background-image: url(https://assets.trainline.eu/assets/images/calendar-inward-5d0aa59596158d156fcfa9e846b93e52.svg);
+        }
+      }
+      .passenger {
+
+        display: flex;
+
+        input {
+          border: 1px solid #DCE3E6;
+          width: 100%;
+          color: #323E42;
+          box-sizing: border-box;
+          margin: 0;
+          text-align: left;
+          padding: 11px 0 11px 35px;
+          border-radius: .3125em;
+          line-height: 20px;
+          background-repeat: no-repeat;
+          background-position: 11px center;
+          font-size: 100%;
+          opacity: 0.60;
+
+        }
+
+        input:focus {
+          border-color: #01C3A7;
+          background-color: #FFF;
+          box-shadow: none;
+          opacity: 1;
+        }
+
+        .select {
+
+          background-image: url(https://assets.trainline.eu/assets/images/passenger-47004cd84d9b731383854ab84bf01f56.svg);
+          border-bottom-right-radius: 0;
+          border-top-right-radius: 0;
+        }
+
+        .plus {
+
+          width: 45px;
+          height: 44px;
+          border: 1px solid #DCE3E6;
+          border-left: none;
+          background: url(https://assets.trainline.eu/assets/images/plus-217e7af9c79de44dfb56833d0cc554f6.svg) center no-repeat;
+          background-size: 70%;
+          border-bottom-right-radius: 5px;
+          border-top-right-radius: 5px;
+
+        }
+
+      }
+      .research {
+
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+
+        a {
+
+          width: 185px;
+          margin-top: 13px;
+          font-size: .87em;
+          color: #059E87;
+          cursor: pointer;
+        }
+
+        a:hover {
+         text-decoration: underline;
+        }
+        .search {
+          width: 180px;
+        }
+
+        button {
+          width: 180px;
+          border: 1px solid #01C3A7;
+          color: #FFF;
+          cursor: pointer;
+          box-shadow: 0 1px 1px -1px #8C9DA1;
+          font-size: .9em;
+          font-weight: 400;
+          letter-spacing: .025em;
+          text-transform: uppercase;
+          outline: 0;
+          border-radius: .3125em;
+          padding: 12px 22px;
+          text-align: center;
+          background-color: #01C3A7;
+
+        }
+
+        button:hover {
+          background-color: #01aa91;
+          border-color: #01aa91 #01aa91 #017766;
+          text-decoration: none;
+        }
+      }
+
+
+    }
+    .info {
+      margin-right: 2.35765%;
+      width: 48%;
       padding: 24px 40px;
       background-color: #FFF;
       border-radius: .3125em;
     }
-
-
   }
 }
