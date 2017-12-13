@@ -1,6 +1,6 @@
 $textcolor1 : #21314D;
 $textcolor2 : #8C8A8C;
-$background : white;
+$background : transparent;
 
 .container.two
 {
@@ -8,10 +8,11 @@ $background : white;
   height: 400px;
   display: flex;
   flex-direction: column;
-  background-color: red;
+  background-color: $background;
   flex-wrap: nowrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  transform: ;
 
   .trust
   {
