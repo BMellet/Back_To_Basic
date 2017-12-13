@@ -1,0 +1,75 @@
+$background: #F5F6F7;
+
+.container.three
+{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  .photo
+  {
+    display: flex;
+    width: 50%;
+    height: 380px;
+
+
+  }
+  .photo.one
+  {
+    background-image: url(https://assets.trainline.eu/assets/images/open-home/arguments/illu-1-travel-bc3683df69fd87bdffc7186f25fe1875.jpg);
+    background-position: center;
+    background-size: 100%;
+  }
+  .photo.two
+  {
+    background-image: url(https://assets.trainline.eu/assets/images/open-home/arguments/illu-2-high-speed-trains-03a963b378417100e9b9a57d354b4243.jpg);
+    background-position: left;
+    background-size: 100%;
+  }
+  .photo.three
+  {
+    background-image: url(https://assets.trainline.eu/assets/images/open-home/arguments/illu-3-rails-6bbf1629d7fdf8dfa9fe4220f67f6045.jpg);
+    background-position: center;
+    background-size: 100%;
+  }
+  .text
+  {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 50%;
+    height: 380px;
+    background-color: $background;
+    justify-content: center;
+    align-items: center;
+
+    .BigTitle
+    {
+      padding-left: 68px;
+      width: 100%;
+      text-align: left;
+
+      h2
+      {
+        font-size: 32px;
+        color: $textcolor1;
+        margin-bottom: 0;
+
+      }
+    }
+    .Description
+    {
+      padding-left: 68px;
+      width: 100%;
+      text-align: left;
+
+
+      p
+      {
+        color: $textcolor2;
+        font-size: 20px;
+      }
+    }
+  }
+
+}
