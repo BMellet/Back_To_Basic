@@ -1,0 +1,163 @@
+.HIWork {
+  background: url(https://assets.trainline.eu/assets/images/open-home/dots-pattern-9924c5c6be38a8d865f151c97c18d898.png) #fff;
+  padding: 70px 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  h2 {
+    color: #21314D;
+    font-size: 28px;
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .boxHIWork {
+    display: flex;
+    flex-wrap: nowrap;
+    float: right;
+    width: 100%;
+  }
+
+  .boxicons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .boxbillets {
+    display: inherit;
+    border-left: 2px solid #ECECEC;
+    margin-right: 220px;
+  }
+
+  .boxpaiement {
+    display: inherit;
+    margin-left: 283px;
+  }
+
+  .imgIcon {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 35px auto 15px;
+    width: 95%;
+
+    #cards {
+      max-width: 100%;
+    }
+
+    #paypal {
+      margin-right: 30px;
+      max-width: 100%;
+    }
+
+    #tickets {
+      margin-left: 30px;
+      max-width: 100%;
+    }
+
+    #eticket {
+      margin-right: 40px;
+      max-width: 100%;
+    }
+  }
+
+  h3 {
+    font-size: 17px;
+    color: #8C8A8C;
+  }
+
+  .or {
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+    width: 10%;
+    color: #CCC;
+    font-weight: 600;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  p {
+    font-size: 18px;
+    color: #8C8A8C;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+}
+
+.OnBoard {
+  display: flex;
+  flex-wrap: wrap;
+  background: url(https://assets.trainline.eu/assets/images/open-home/dots-pattern-9924c5c6be38a8d865f151c97c18d898.png) #3F618C;
+  padding: 60px 0;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+
+  h2 {
+    color: white;
+    margin-top: 0;
+    margin-bottom: .3em;
+    font-size: 32px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  p {
+    margin: 0;
+    font-size: 19px;
+    line-height: 1.5em;
+    color: white;
+    width: 100%;
+    justify-content: center;
+  }
+
+  button {
+    background-color: #01aa91;
+    border-color: #01aa91 #01aa91 #017766;
+    border: 1px solid #01C3A7;
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-size: 16px;
+    letter-spacing: .025em;
+    font-weight: 600;
+    color: white;
+    box-shadow: 0 1px 1px -1px #8C9DA1;
+    border-radius: .3125em;
+    padding: 12px 22px;
+    text-align: center;
+    cursor: pointer;
+  }
+}
+
+.advise {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  padding: 60px 0;
+
+  h2 {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: .3em;
+    font-size: 32px;
+    color: #21314D;
+  }
+
+  p {
+    width: 100%;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 19px;
+    line-height: 1.5em;
+    color: #8C8A8C;
+  }
+}
