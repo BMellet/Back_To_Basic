@@ -12,7 +12,8 @@ $background : transparent;
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: center;
-  transform: ;
+  transform: translateY(-80px);
+  
 
   .trust
   {
@@ -24,7 +25,7 @@ $background : transparent;
     width: 68%;
     height: auto;
     color: $textcolor2;
-    background-color:$background;
+    background-color:white;
     justify-content: center;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -35,6 +36,16 @@ $background : transparent;
     {
       margin: 0;
       margin-bottom: 20px;
+    }
+  }
+
+  .company.deux
+  {
+    margin-top: 10px;
+    width: 60%;
+    *
+    {
+      margin-right: 3%;
     }
   }
 
@@ -84,7 +95,7 @@ $background : transparent;
     }
     .tgvlyria
     {
-      background-image: url(https://assets.trainline.eu/assets/images/carriers/color/lyria-3b59058530cd6e4a2b89eea4b12407ef.svg);      background-size: 100%;
+      background-image: url(https://assets.trainline.eu/assets/images/carriers/color/lyria-3b59058530cd6e4a2b89eea4b12407ef.svg);
       background-size: 115%;
     }
     .db
@@ -93,7 +104,76 @@ $background : transparent;
       background-size: 170%;
 
     }
+    .trenitalia
+    {
+      background-image: url(https://assets.trainline.eu/assets/images/open-home/carriers/trenitalia-af087610d879e75880004ba32b6b8d71.svg);
+      background-size: 100%;
+    }
+    .thello
+    {
+      background-image: url(https://assets.trainline.eu/assets/images/carriers/color/thello-5eff56c5679cfcc2560dc44e9cab96d0.svg);
+      background-size: 150%;
+
+    }
+    .italo
+    {
+      background-image: url(https://assets.trainline.eu/assets/images/open-home/carriers/italo-b795d86d1e9a3b8d61e19868b0fed225.svg);
+      background-size: 90%;
+
+    }
+    .renfe
+    {
+      background-image: url(https://assets.trainline.eu/assets/images/carriers/color/renfe-bab513d2d37801c86f7d2ebe9d0334ba.svg);
+      background-size: 130%;
+
+    }
+    .sncb
+    {
+      background-image: url(https://assets.trainline.eu/assets/images/carriers/color/sncb-e2b7470599ea7cb7178676247377fe8e.svg);
+      background-size: 130%;
+
+    }
+    .ns
+    {
+      background-image: url(https://assets.trainline.eu/assets/images/carriers/color/ns-e8739d50040e2bae80b4a8efc4a85376.svg);
+      background-size: 130%;
+
+    }
+    .cff
+    {
+      background-image: url(https://assets.trainline.eu/assets/images/carriers/color/cff-c39195da8644f20ac05eb76cd9bdaeb5.svg);
+      background-size: 130%;
+
+    }
 
 
   }
+  .billet
+  {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    .BigTitle
+    {
+      width: inherit;
+      text-align: center;
+
+      h2
+      {
+        font-size: 32px;
+        font-weight: 700!important;
+        color: $textcolor1;
+
+      }
+    }
+    .Description
+    {
+      width: inherit;
+      text-align: center;
+      color: $textcolor2;
+    }
+  }
+
 }
