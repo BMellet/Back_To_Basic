@@ -1,1 +1,1 @@
-!function(){console.log("hello world !");console.log("hello michel")}();
+function twitter(){document.getElementById("tweets").style.height="1200px";document.getElementById("linkTweet").style.visibility="hidden"}
