@@ -19,12 +19,13 @@ gulp.task('sass', function() {
 });
 
 gulp.task('uglify', function () {
-        gulp.src('assets/js/app.js')
-          uglify()
-        gulp.dest('public/js/')
-        .pipe(browserSync.stream());
+  gulp.src('assets/js/app.js')
+    .pipe(uglify())
+    .pipe(gulp.dest('public/js/'))
+    .pipe(browserSync.reload({
+      stream: true
+    }))
 });
-
 
 gulp.task('serve', ['sass', 'uglify'], function() {
     browserSync.init({
@@ -34,7 +35,7 @@ gulp.task('serve', ['sass', 'uglify'], function() {
         reload:true
     });
 		gulp.watch('assets/sass/**/*.scss',['sass']);
-		gulp.watch('assets/js/**/*.js', ['uglify']);
+		gulp.watch('assets/js/*.js', ['uglify']);
 		 gulp.watch("public/*.html").on('change', browserSync.reload);
 });
 
