@@ -18,6 +18,7 @@ $background: #F5F6F7;
   {
     background-image: url(https://assets.trainline.eu/assets/images/open-home/arguments/illu-1-travel-bc3683df69fd87bdffc7186f25fe1875.jpg);
     background-position: center;
+    background-repeat: no-repeat;
     background-size: 100%;
   }
   .photo.two
@@ -25,12 +26,14 @@ $background: #F5F6F7;
     background-image: url(https://assets.trainline.eu/assets/images/open-home/arguments/illu-2-high-speed-trains-03a963b378417100e9b9a57d354b4243.jpg);
     background-position: left;
     background-size: 100%;
+    background-repeat: no-repeat;
   }
   .photo.three
   {
     background-image: url(https://assets.trainline.eu/assets/images/open-home/arguments/illu-3-rails-6bbf1629d7fdf8dfa9fe4220f67f6045.jpg);
     background-position: center;
     background-size: 100%;
+    background-repeat: no-repeat;
   }
   .text
   {
@@ -49,12 +52,18 @@ $background: #F5F6F7;
       width: 100%;
       text-align: left;
 
+
       h2
       {
         font-size: 32px;
         color: $textcolor1;
         margin-bottom: 0;
 
+      }
+      .BigTitle.right
+      {
+        padding-left: 0;
+        padding-right: 68px;
       }
     }
     .Description
@@ -69,6 +78,13 @@ $background: #F5F6F7;
         color: $textcolor2;
         font-size: 20px;
       }
+      .Description.right
+      {
+        padding-left: 0;
+        padding-right: 68px;
+      }
+
+
     }
   }
 
